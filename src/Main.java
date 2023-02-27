@@ -2,6 +2,8 @@ public class Main {
 
     // Main Method
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+
+        RomanNumeralConverter intToRoman = new RomanNumeralConverter(2022);
+        System.out.println(intToRoman);
     }
 }
