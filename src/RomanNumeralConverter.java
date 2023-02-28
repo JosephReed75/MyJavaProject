@@ -37,10 +37,10 @@ public class RomanNumeralConverter {
         //loop iterate over the string (given roman numeral)
         //getting value from symbol s1[i]
         for (int i = 0; i < str.length(); i++) {
-            int s1 = value(str.charAt(i));
+            int s1 = value(str.toUpperCase().charAt(i));
             //getting value of symbol s2[i+1]
             if (i + 1 < str.length()) {
-                int s2 = value(str.charAt(i + 1));
+                int s2 = value(str.toUpperCase().charAt(i + 1));
                 //comparing the current character from its right character
                 if (s1 >= s2) {
                 //if the value of current character is greater or equal to the next symbol
@@ -55,11 +55,11 @@ public class RomanNumeralConverter {
         }
         System.out.println();
         // Print the Number Entered
-        System.out.println("Roman Numeral: " + str);
+        System.out.println("Roman Numeral: " + str.toUpperCase());
         //returns corresponding integer value
-        System.out.println("******************************");
+        System.out.println("**********************************");
         System.out.println("Corresponding Real Number is: " + total);
-        System.out.println("******************************");
+        System.out.println("**********************************");
     }
     private void intToRoman(int num){
         System.out.println();
@@ -86,9 +86,9 @@ public class RomanNumeralConverter {
             }
         }
 
-        System.out.println("******************************");
+        System.out.println("**********************************");
         System.out.println("Corresponding Roman Numerals is: " + roman);
-        System.out.println("******************************");
+        System.out.println("**********************************");
     }
 
 }
