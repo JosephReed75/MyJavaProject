@@ -1,7 +1,7 @@
 public class RomanNumeralConverter {
 
     // Constructor that Converts Integer to Roman Numeral
-    RomanNumeralConverter(int num) {
+    RomanNumeralConverter(int num){
         intToRoman(num);
     }
 
@@ -61,7 +61,7 @@ public class RomanNumeralConverter {
         System.out.println("Corresponding Real Number is: " + total);
         System.out.println("******************************");
     }
-    private void intToRoman(int num) {
+    private void intToRoman(int num){
         System.out.println();
         System.out.println();
         // Print the Number Entered

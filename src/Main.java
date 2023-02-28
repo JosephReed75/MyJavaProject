@@ -1,13 +1,22 @@
+import java.util.Scanner;
+
 public class Main {
 
     // Main Method
     public static void main(String[] args) {
         boolean inputValid = false;
+        Scanner in = new Scanner(System.in);
+        do {
+            System.out.println("Please enter a Number to convert to Roman Numerals");
+            try {
 
-/*        do {
+
+            }catch (NumberFormatException nfe){
+
+            }
 
 
-        }while (!inputValid);*/
+        }while (!inputValid);
 
 
 
